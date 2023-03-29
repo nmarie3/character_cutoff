@@ -1,0 +1,36 @@
+const textBox = document.getElementById("text-box");
+const limitLine = document.getElementById("limit-line");
+const warning = document.getElementById("warning");
+
+document.getElementById("text-input").addEventListener("input", updateText);
+document.getElementById("font-select").addEventListener("change", updateFont);
+document.getElementById("size-input").addEventListener("input", updateFont);
+document.getElementById("limit-input").addEventListener("input", updateLimit);
+
+function updateText() {
+  const text = document.getElementById("text-input").value;
+  textBox.innerHTML = text;
+  updateLimitLine();
+  updateWarning();
+}
+
+function updateFont() {
+  const font = document.getElementById("font-select").value;
+  const size = document.getElementById("size-input").value + "px";
+  textBox.style.fontFamily = font;
+  textBox.style.fontSize = size;
+}
+
+function updateLimit() {
+  const limit = document.getElementById("limit-input").value;
+  textBox.style.maxWidth = limit + "px";
+  updateLimitLine();
+  updateWarning();
+}
+
+function updateLimitLine() {
+  const limit = parseInt(document.getElementById("limit-input").value);
+  const limitLinePos = textBox.offsetLeft + limit;
+  limitLine.style.left = limitLinePos + "px";
+}
+

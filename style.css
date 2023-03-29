@@ -1,0 +1,45 @@
+body {
+    display: flex;
+}
+
+section {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#text-box {
+    width: 900px;
+    height: 600px;
+}
+
+#text-input {
+    width:500px;
+    height: 300px;
+}
+
+
+#first {
+    flex-direction: column;
+}
+
+#second {
+    padding: 20px;
+    justify-items: center;
+}
+
+
+#result-box {
+    width:500px;
+    height: 300px;
+    border: 2px solid green;
+}
+
+
+#limit-line {
+    position: absolute;
+    justify-content: center;
+    height: 300px;
+    border-left: 2px solid red;
+    left: 300px;
+    top: 230px;
+  }
