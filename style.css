@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -31,7 +32,6 @@ section {
 #result-box {
     width:500px;
     height: 300px;
-    border: 2px solid green;
 }
 
 
@@ -42,4 +42,8 @@ section {
     border-left: 2px solid red;
     left: 300px;
     top: 230px;
+  }
+
+  #limit-slider {
+    min-width: 300px;
   }

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+
     <title>Document</title>
 </head>
 <body>
@@ -23,6 +29,10 @@
         <label for="limit-input">Limit:</label>
             <input id="limit-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="780">
         </div>
+        <section id="sliders">
+            <h3>Adjust Sliders:</h3>
+            <input type="range" id="limit-slider" min="0" max="100" value="50">
+        </section>
         </section>
     <section id="third">
         <div id="result-box"></div>
