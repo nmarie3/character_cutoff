@@ -1,17 +1,25 @@
-const textInput = document.querySelector('#text-input');
-const resultBox = document.querySelector('#result-box');
+const textInput_1 = document.querySelector('#text-input_1');
+const textInput_2 = document.querySelector('#text-input_2');
+const resultBox_1 = document.querySelector('#result-box_1');
+const resultBox_2 = document.querySelector('#result-box_2');
 const limitRedLine = document.querySelector('#limit-line');
 let limitSlider = document.querySelector('#limit-slider');
 
-textInput.addEventListener("input", updateText);
+textInput_1.addEventListener("input", updateText_1);
+textInput_2.addEventListener("input", updateText_2);
 limitSlider.addEventListener('input', updateLimitLine);
 // document.querySelector('#size-input').addEventListener("input", updateFont);
 // document. querySelector('#font-select').addEventListener("change", updateFont);
 
 
-function updateText() {
-    const text = document.querySelector('#text-input').value;
-    resultBox.innerText = text;
+function updateText_1() {
+    const text_1 = document.querySelector('#text-input_1').value;
+    resultBox_1.innerText = text_1;
+}
+
+function updateText_2() {
+    const text_2 = document.querySelector('#text-input_2').value;
+    resultBox_2.innerText = text_2;
 }
 
 function updateFont() {

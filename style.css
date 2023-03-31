@@ -8,40 +8,49 @@ section {
     padding: 20px;
 }
 
-#text-box {
-    width: 900px;
-    height: 600px;
-}
 
-#text-input {
-    width:500px;
-    height: 300px;
+#text-input_1, #text-input_2 {
+    width:30vh;
+    height: 200px;
+    resize: none;
 }
 
 
 #first {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-box {
+    padding: 10px;
 }
 
 #second {
-    padding: 20px;
+    padding: 5px;
     justify-items: center;
 }
 
+#third {
+    display: flex;
+}
 
-#result-box {
-    width:500px;
-    height: 300px;
+#result-box_1, #result-box_2 {
+    width:70vh;
+    height: auto;
+    border: 3px solid black];
+}
+
+#result-box_2 {
+    border-left: 3px solid black;
+    padding-left: 10px;
 }
 
 
 #limit-line {
-    position: absolute;
-    justify-content: center;
-    height: 300px;
+    width: 5px;
     border-left: 2px solid red;
-    left: 300px;
-    top: 230px;
+    left: 700px;
   }
 
   #limit-slider {
