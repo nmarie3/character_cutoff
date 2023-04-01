@@ -59,12 +59,10 @@ h3 {
 
 
 #limit-line {
+    display: none;
     position: absolute;
-    width: 5px;
-    background-color: red;
-    left: 600px;
-    top: 0;
-    height: 100%;
+    width: 600px;
+    border-right: 5px solid red;
     content: "";
     z-index: 1;
   }

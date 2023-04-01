@@ -15,14 +15,28 @@ limitInput.addEventListener('input', updateLimitLine);
 
 function updateText_1() {
     const text_1 = document.querySelector('#text-input_1').value;
-    resultBox_1.innerHTML = `<div id="limit-line"></div>${text_1}`;
+    resultBox_1.innerText = text_1;
+    unhideLine ();
+    setTimeout(lineHeight, 10);
 }
 
 function updateText_2() {
     const text_2 = document.querySelector('#text-input_2').value;
-    resultBox_2.innerHTML = text_2;
+    resultBox_2.innerText = text_2;
 }
 
+function unhideLine () {
+    if (resultBox_1.innerText) {
+        limitRedLine.style.display = 'inline-block';
+    } else {
+        limitRedLine.style.display = 'none';
+    }
+}
+
+function lineHeight() {
+    const resultBoxHeight = resultBox_1.clientHeight;
+    limitRedLine.style.height = resultBoxHeight + "px";
+}
 
 function updateLimitLine () {
     const limitValue = limitInput.value;
@@ -32,11 +46,10 @@ function updateLimitLine () {
     const maxLimitPosition = resultBoxWidth - limitLineWidth;
 
     if (limitPosition > maxLimitPosition) {
-        limitRedLine.style.left = maxLimitPosition + "px";
+        limitRedLine.style.width = maxLimitPosition + "px";
     } else {
-        limitRedLine.style.left = limitPosition + "px";
+        limitRedLine.style.width = limitPosition + "px";
     }
-
 }
 
 // function updateFont() {
