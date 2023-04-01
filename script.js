@@ -14,12 +14,12 @@ limitSlider.addEventListener('input', updateLimitLine);
 
 function updateText_1() {
     const text_1 = document.querySelector('#text-input_1').value;
-    resultBox_1.innerText = text_1;
+    resultBox_1.innerHTML = `<div id="limit-line"></div><p>${text_1}</p>`;
 }
 
 function updateText_2() {
     const text_2 = document.querySelector('#text-input_2').value;
-    resultBox_2.innerText = text_2;
+    resultBox_2.innerHTML = text_2;
 }
 
 function updateFont() {
