@@ -3,6 +3,7 @@ body {
     flex-direction: column;
 }
 
+
 section {
     border: 2px solid black;
     padding: 20px;
@@ -10,11 +11,14 @@ section {
 
 
 #text-input_1, #text-input_2 {
-    width:30vh;
+    width:400px;
     height: 200px;
     resize: none;
 }
 
+h3 {
+    text-align: center;
+}
 
 #first {
     display: flex;
@@ -35,15 +39,22 @@ section {
     display: flex;
 }
 
+
+
 #result-box_1, #result-box_2 {
-    width:70vh;
     height: auto;
     position: relative;
+    justify-items: center;
+}
+
+#result-box_1 {
+    width:700px;
 }
 
 #result-box_2 {
     border-left: 3px solid black;
     padding-left: 10px;
+    margin-left: 90px;
 }
 
 
@@ -51,13 +62,13 @@ section {
     position: absolute;
     width: 5px;
     background-color: red;
-    left: 300px;
+    left: 600px;
     top: 0;
     height: 100%;
     content: "";
     z-index: 1;
   }
 
-  #limit-slider {
+  /* #limit-slider {
     min-width: 300px;
-  }
+  } */
