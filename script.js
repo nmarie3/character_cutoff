@@ -61,9 +61,9 @@ function updateLimitLine () {
     const maxLimitPosition = 600;
 
     if (limitValue > maxLimitPosition) {
-        limitRedLine.style.left = maxLimitPosition + 30 + "px";
+        limitRedLine.style.left = maxLimitPosition + "px";
     } else {
-        limitRedLine.style.left = limitValue + 30 + "px";
+        limitRedLine.style.left = limitValue + "px";
     }
 }
 
