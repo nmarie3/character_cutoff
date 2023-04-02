@@ -75,6 +75,7 @@ h3 {
 }
 
 #result-box_2 {
+    display: none;
     border-left: 3px solid black;
     padding-left: 10px;
     margin-left: 90px;

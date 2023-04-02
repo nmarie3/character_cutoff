@@ -35,6 +35,12 @@ function updateText_1() {
 function updateText_2() {
     const text_2 = textInput_2.value;
     resultBox_2.innerText = text_2;
+    
+    if (resultBox_2.innerText) {
+        resultBox_2.style.display = 'inline-block';
+    } else {
+        resultBox_2.style.display = 'none';
+    }
 }
 
 function unhideLine () {
