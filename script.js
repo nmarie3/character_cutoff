@@ -58,15 +58,12 @@ function lineHeight() {
 
 function updateLimitLine () {
     const limitValue = limitInput.value;
-    const resultBoxWidth = resultBox_1.offsetWidth;
-    const limitLineWidth = limitRedLine.offsetWidth;
-    const limitPosition = (limitValue / 100) * resultBoxWidth;
-    const maxLimitPosition = resultBoxWidth - limitLineWidth;
+    const maxLimitPosition = 600;
 
-    if (limitPosition > maxLimitPosition) {
-        limitRedLine.style.width = maxLimitPosition + "px";
+    if (limitValue > maxLimitPosition) {
+        limitRedLine.style.left = maxLimitPosition + "px";
     } else {
-        limitRedLine.style.width = limitPosition + "px";
+        limitRedLine.style.left = limitValue + "px";
     }
 }
 

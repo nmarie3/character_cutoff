@@ -31,12 +31,6 @@ section {
 }
 
 
-#text-input_1, #text-input_2 {
-    width:400px;
-    height: 200px;
-    resize: none;
-}
-
 h3 {
     text-align: center;
 }
@@ -45,6 +39,12 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#text-input_1, #text-input_2 {
+    width:40vw;
+    height: 200px;
+    resize: none;
 }
 
 .text-box {
@@ -76,7 +76,7 @@ h3 {
 
 #result-box_2 {
     display: none;
-    border-left: 3px solid black;
+    /* border-left: 3px solid black; */
     padding-left: 10px;
     margin-left: 90px;
 }
@@ -85,8 +85,10 @@ h3 {
 #limit-line {
     display: none;
     position: absolute;
-    width: 600px;
-    border-right: 5px solid red;
+    width: 5px;
+    background-color: red;
+    left:600px;
+    /* border-right: 5px solid red; */
     content: "";
     z-index: 1;
   }
