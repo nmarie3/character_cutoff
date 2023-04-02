@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Sans+KR&family=Noto+Sans+TC&family=Whisper&display=swap" rel="stylesheet">
 
 
     <title>Document</title>
@@ -28,7 +29,12 @@
         <div class="settings">
         <label for="font-select">Font:</label>
             <select id="font-select">
-            <option value="Rodin, truetype">FOT-UD角ゴC80pro M</option>
+            <option value="">Choose Font</option>
+            <option class="Aboreto">Aboreto</option>
+            <option class="Whisper">Whisper</option>
+            <option class="Rodin">FOT-UD角ゴC80pro M</option>
+            <option class="NotoSansKorean">Noto Sans Korean</option>
+            <option class="NotoSansTC">Noto Sans Traditional Chinese</option>
             </select>
         <label for="size-input">Size:</label>
             <input id="size-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="">

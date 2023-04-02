@@ -4,24 +4,36 @@ const resultBox_1 = document.querySelector('#result-box_1');
 const resultBox_2 = document.querySelector('#result-box_2');
 const limitRedLine = document.querySelector('#limit-line');
 const limitInput = document.querySelector('#limit-input');
-// let limitSlider = document.querySelector('#limit-slider');
+const sizeInput = document.querySelector('#size-input')
+const fontSelect = document.querySelector('#font-select')
+const thirdSection = document.querySelector('#third');
+
 
 textInput_1.addEventListener("input", updateText_1);
 textInput_2.addEventListener("input", updateText_2);
 limitInput.addEventListener('input', updateLimitLine);
-// document.querySelector('#size-input').addEventListener("input", updateFont);
-// document. querySelector('#font-select').addEventListener("change", updateFont);
+sizeInput.addEventListener("input", updateFont);
+fontSelect.addEventListener("change", updateFont);
 
+
+function updateFont() {
+const font = fontSelect.value;
+const size = sizeInput.value + "px";
+    thirdSection.style.fontFamily = font;
+    thirdSection.style.fontSize = size;
+    lineHeight();
+}
 
 function updateText_1() {
-    const text_1 = document.querySelector('#text-input_1').value;
+    const text_1 = textInput_1.value;
     resultBox_1.innerText = text_1;
     unhideLine ();
-    setTimeout(lineHeight, 10);
+    updateFont();
+    lineHeight();
 }
 
 function updateText_2() {
-    const text_2 = document.querySelector('#text-input_2').value;
+    const text_2 = textInput_2.value;
     resultBox_2.innerText = text_2;
 }
 
@@ -52,17 +64,3 @@ function updateLimitLine () {
     }
 }
 
-// function updateFont() {
-//     const text = document.querySelector('#font-select').value;
-//     const size = document.querySelector('#size-input').value + "px";
-//     resultBox.style.fontFamily = font;
-//     resultBox.style.fontSize = size;
-// }
-
-
-
-// function updateLimitLine () {
-//     const sliderValue = limitSlider.value;
-//     const limitLine = limitRedLine;
-//     limitLine.style.left =sliderValue + '%';
-// }
