@@ -83,6 +83,7 @@ h3 {
 
 
 #limit-line {
+    padding: 20px;
     display: none;
     position: absolute;
     width: 5px;
