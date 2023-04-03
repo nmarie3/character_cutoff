@@ -17,16 +17,15 @@
 <body>
     <section id="first">
         <div class="text-box">
-        <label for="text-input_1">English:</label><br>
+        <label for="text-input_1">Target Text:</label><br>
         <textarea id="text-input_1"></textarea>
         </div>
         <div class="text-box">
-        <label for="text-input_2">Japanese:</label><br>
+        <label for="text-input_2">Source Text:</label><br>
         <textarea id="text-input_2"></textarea>
         </div>
     </section>
     <section id="second">
-        <div class="settings">
         <label for="font-select">Font:</label>
             <select id="font-select">
             <option value="">Choose Font</option>
@@ -40,11 +39,12 @@
             <input id="size-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="">
         <label for="limit-input">Limit (max 600px):</label>
             <input id="limit-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="">
-        </div>
         <!-- <section id="sliders">
             <h3>Adjust Sliders:</h3>
             <input type="range" id="limit-slider" min="0" max="100" value="50">
         </section> -->
+
+            <p id="disclaimer">***Source Text begins at 700px onscreen and auto wraps depending on page size. If providing source text, opening the app in full screen or greater than 1,000px is recommended. </p>
         </section>
     <section id="third">
         <div id="result-box_1"></div>

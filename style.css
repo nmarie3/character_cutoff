@@ -30,6 +30,15 @@ section {
     padding: 20px;
 }
 
+input {
+    width: 40px;
+}
+
+#disclaimer {
+    padding:5px;
+    margin: 2px;
+    font-size: 10px;
+}
 
 h3 {
     text-align: center;
@@ -66,30 +75,31 @@ h3 {
 
 #result-box_1, #result-box_2 {
     height: auto;
-    position: relative;
     justify-items: center;
+    position: relative;
 }
 
 #result-box_1 {
     width:700px;
+    max-width: 700px;
 }
 
 #result-box_2 {
     display: none;
+    left: 2px;
     /* border-left: 3px solid black; */
-    padding-left: 10px;
-    margin-left: 90px;
 }
 
 
 #limit-line {
-    padding: 20px;
+    padding: 12px;
+    padding-bottom: 0px;
     display: none;
     position: absolute;
     width: 5px;
-    background-color: red;
+    /* background-color: red; */
     left:600px;
-    /* border-right: 5px solid red; */
+    border-right: 5px solid red;
     content: "";
     z-index: 1;
   }
