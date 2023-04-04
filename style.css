@@ -1,11 +1,27 @@
 @font-face {
-    font-family: Rodin; 
-    src: url('universal.otf'); 
-} 
-.Rodin{
+    font-family: 'Rodin';
+    src: url(/KMSfonts/universal.otf) format('opentype');
+}
+@font-face {
+    font-family: 'RodinUI';
+    src: url(/KMSfonts/universal_UI.otf) format('opentype');
+}
+
+
+.Rodin {
     font-family: 'Rodin';
     letter-spacing: -.009em;
+    transform: scale(143%,110%);
 }
+
+.RodinUI {
+  font-family: 'RodinUI';
+  letter-spacing: -.009em;
+  transform: scale(100%,110%);
+  padding: 2px;
+  padding-right: 10px;
+}
+
 .Aboreto {
     font-family: 'Aboreto', cursive;
 }
@@ -67,8 +83,10 @@ h3 {
 
 #third {
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
     font-size: 20px;
+    position: relative;
+    height: auto;
 }
 
 
@@ -76,17 +94,19 @@ h3 {
 #result-box_1, #result-box_2 {
     height: auto;
     justify-items: center;
-    position: relative;
 }
 
 #result-box_1 {
-    width:700px;
-    max-width: 700px;
+    width:800px;
 }
 
 #result-box_2 {
     display: none;
-    left: 2px;
+    position: relative;
+    left: 800px;
+    width: auto;
+    left: 800px;
+    height: auto;
     /* border-left: 3px solid black; */
 }
 

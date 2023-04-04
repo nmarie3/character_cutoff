@@ -58,7 +58,7 @@ function lineHeight() {
 
 function updateLimitLine () {
     const limitValue = limitInput.value;
-    const maxLimitPosition = 600;
+    const maxLimitPosition = 800;
 
     if (limitValue > maxLimitPosition) {
         limitRedLine.style.left = maxLimitPosition + "px";

@@ -29,22 +29,23 @@
         <label for="font-select">Font:</label>
             <select id="font-select">
             <option value="">Choose Font</option>
+            <option class="Rodin">Rodin</option>
+            <option class="RodinUI">RodinUI</option>
             <option class="Aboreto">Aboreto</option>
             <option class="Whisper">Whisper</option>
-            <option class="Rodin">FOT-UD角ゴC80pro M</option>
             <option class="NotoSansKorean">Noto Sans Korean</option>
             <option class="NotoSansTC">Noto Sans Traditional Chinese</option>
             </select>
         <label for="size-input">Size:</label>
-            <input id="size-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="">
-        <label for="limit-input">Limit (max 600px):</label>
-            <input id="limit-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="">
+            <input id="size-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="20">
+        <label for="limit-input">Limit (max 800px):</label>
+            <input id="limit-input" type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189" value="600">
         <!-- <section id="sliders">
             <h3>Adjust Sliders:</h3>
             <input type="range" id="limit-slider" min="0" max="100" value="50">
         </section> -->
 
-            <p id="disclaimer">***Source Text begins at 700px onscreen and auto wraps depending on page size. If providing source text, opening the app in full screen or greater than 1,000px is recommended. </p>
+            <p id="disclaimer">***Source Text begins at 800px onscreen and auto wraps depending on page size. If providing source text, opening the app in full screen or greater than 1,000px is recommended. </p>
         </section>
     <section id="third">
         <div id="result-box_1"></div>
